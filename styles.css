@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro');
+
+body {
+    background-color : #C7CCDB;
+    background-color: #19323C;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    color : #19323C;
+    color : white;
+    padding-top: 25px;
+    letter-spacing: 1px;
+}
+
+
+h1 {
+    font-size: 2.75rem;
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    margin-right: 5%;
+    margin-bottom: 50px;
+    padding-bottom: 2.5px;
+    border-bottom: 2px solid white;
+}
+
+p {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    display: none;
+    margin: 20px 0;
+    margin-bottom: 10px;
+}
+
+a {
+    color : #F2545B;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+a:visited {
+    color : #F2545B
+}
+
+input, select, option {
+ padding: 7.5px;   
+}
+
+input {
+    display: block;
+    margin: 20px 0;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 20px 0;
+    background-color: white;
+    color : #19323C;
+    border: none;
+    padding: 10px 7.5px;
+    border-radius: 10px;
+    border: 3px solid #F2545B;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.box {
+    width: 50%;
+    float: left;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

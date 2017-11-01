@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment 02</title>
+</head>
+<body class="cf">
+    <h1>Welcome to Student Registration System </h1>
+    <div class="box">
+            <h3>Enter a student's details</h3>
+            <form action="/" method="POST">
+            <input type="text" name="name" placeholder="Name.." required>
+            <input type="text" name="ID" placeholder="ID.." required>
+            <input type="text" name="Nationality" placeholder="Nationality.." required>
+            <select  name="Stream" id="">
+                <option value="designer">Designer</option>
+                <option value="developer">Developer</option>
+            </select>
+            <input type="submit" placeholder="Submit">
+            </form>
+    </div>
+    
+    <div class="box">
+        <h3>Already Registered Students</h3>
+        {{#each studentsData}}
+        <p>Name : {{ name }} </p>
+         <!-- <p>ID : {{ ID }} </p> -->
+         <!-- <p>Stream : {{Stream}}</p>  -->
+         <!-- <p>Nationality : {{ Nationality }}  </p> -->
+         <a href=" {{key}} ">Details</a>
+         <a href="/edit/{{key}}">Edit</a>
+        {{/each}}
+    </div>
+</body>
+</html>
